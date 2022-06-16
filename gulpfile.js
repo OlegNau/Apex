@@ -9,7 +9,6 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
@@ -69,16 +68,6 @@ const images = () => {
 }
 
 exports.images = images;
-
-// WebP
-
-const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 75}))
-    .pipe(gulp.dest("build/img"))
-}
-
-exports.createWebp = createWebp;
 
 // Sprite
 
@@ -155,8 +144,7 @@ const build = gulp.series(
     scripts,
     sprite,
     copy,
-    images,
-    createWebp
+    images
   ));
 
 exports.build = build;
@@ -170,8 +158,7 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    copy,
-    createWebp
+    copy
   ),
   gulp.series(
     server,

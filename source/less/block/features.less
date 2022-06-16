@@ -1,0 +1,132 @@
+@import "../variables.less";
+@import "../libs/grid.less";
+
+.features {
+
+  @media @mobile {
+    padding-top: 20px;
+  }
+
+ &__heading {
+   width: 100%;
+   font-family: 'Jost', sans-serif;
+   text-align: center;
+   font-weight: 700;
+   color: @heading-text;
+
+   @media @mobile {
+     margin-bottom: 24px;
+     font-size: 32px;
+     line-height: 40px;
+   }
+
+   @media @tablet-interval {
+     margin-bottom: 24px;
+     font-size: 36px;
+     line-height: 56px;
+   }
+
+   @media @desktop {
+     margin-bottom: 44px;
+     font-size: 36px;
+     line-height: 56px;
+   }
+
+   @media @desktop-min {
+     margin-bottom: 44px;
+     font-size: 36px;
+     line-height: 56px;
+   }
+ }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+
+    @media @mobile {
+      flex-direction: column;
+      padding: 20px 33px 20px 33px;
+      margin-bottom: 5px;
+    }
+
+    @media @tablet-interval {
+      flex-direction: row;
+      width: 60%;
+      margin: 0 auto 20px;
+    }
+
+    @media @desktop {
+      flex-direction: column;
+      padding: 28px 12px 32px 28px;
+    }
+
+    @media @desktop-min {
+      padding: 28px 12px 32px 28px;
+    }
+  }
+
+  &__image {
+    @media @mobile {
+      align-self: center;
+      margin-bottom: 16px;
+    }
+
+    @media @tablet-interval {
+      margin-bottom: 0;
+    }
+
+    @media @desktop {
+      align-self: center;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text-container {
+    @media @mobile {
+      align-self: center;
+      text-align: center;
+    }
+
+    @media @tablet-interval {
+      margin-left: 24px;
+    }
+
+    @media @desktop {
+      align-self: center;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    @media @desktop-min {
+      margin-left: 24px;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 12px;
+    vertical-align: baseline;
+    font-size: 20px;
+    line-height: 33px;
+    color: @heading-text;
+
+    @media @mobile {
+      font-weight: 500;
+    }
+
+    @media @tablet-interval {
+      font-family: 'Jost', sans-serif;
+      font-weight: 700;
+    }
+
+    @media @desktop {
+      font-family: 'Jost', sans-serif;
+      font-weight: 700;
+    }
+
+    @media @desktop-min{
+      font-family: 'Jost', sans-serif;
+      font-weight: 700;
+    }
+  }
+}

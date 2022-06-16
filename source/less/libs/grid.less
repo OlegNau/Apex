@@ -3,9 +3,9 @@
 
 @tablet-interval: ~"(min-width: 768px) and (max-width: 1023px)";
 
-@desktop: ~"(min-width: 1024px) and (max-width: 1289px)";
+@desktop: ~"(min-width: 1024px) and (max-width: 1295px)";
 
-@desktop-min: ~"screen and (min-width: 1290px)";
+@desktop-min: ~"screen and (min-width: 1296px)";
 
 .box {
   height: 50px;
@@ -17,11 +17,11 @@
   margin: 0 auto;
 
   @media @mobile {
-    padding: 0 4px;
+    padding: 0 16px;
   }
 
   @media @tablet-interval {
-    max-width: 768px;
+    max-width: 1023px;
     padding: 0 8px;
   }
 
@@ -31,11 +31,10 @@
   }
 
   @media @desktop-min {
-    max-width: 1290px;
-    padding: 0 16px;
+    max-width: 1296px;
+    padding: 0 24px;
   }
 }
-
 
 .generate-columns(@infix, @n, @padding, @i: 1) when (@i =< @n) {
   .generate-columns(@infix, @n, @padding, (@i + 1));
@@ -87,8 +86,8 @@
   }
 
   @media @desktop-min {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -24px;
+    margin-right: -24px;
   }
 }
 
@@ -106,7 +105,7 @@
   }
 
   @media @desktop-min {
-    .generate-columns(lg, 12, 16px);
+    .generate-columns(lg, 12, 24px);
   }
 }
 

@@ -1,0 +1,147 @@
+@import "../variables.less";
+@import "../libs/grid.less";
+
+.home {
+  padding: 40px 0;
+
+  @media @mobile {
+    padding: 12px 0;
+  }
+
+  @media @tablet-interval {
+    padding: 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @tablet-interval {
+      padding-left: 0;
+    }
+  }
+
+  & h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    color: @heading-text;
+
+    @media @mobile {
+      margin: 0 0 16px;
+      font-size: 34px;
+      line-height: 49px;
+    }
+
+    @media @tablet-interval {
+      margin: 20px 0 20px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @media @desktop {
+      max-width: 510px;
+      margin: 24px 0 24px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @media @desktop-min {
+      max-width: 510px;
+      margin: 28px 0 28px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 32px;
+
+    @media @mobile {
+      margin: 0 0 24px;
+    }
+
+    @media @tablet-interval {
+      margin: 0 0 24px;
+    }
+
+    @media @desktop {
+      width: 440px;
+      margin: 0 0 28px;
+    }
+
+    @media @desktop-min {
+      width: 440px;
+      margin: 0 0 28px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 220px;
+    border-radius: 8px;
+    margin: 0 0 108px;
+    font-weight: 500;
+    color: @white;
+    background-color: @button;
+
+    @media @mobile {
+      padding: 16px 44px 16px 20px;
+      margin: 0 0 32px;
+    }
+
+    @media @tablet-interval {
+      padding: 16px 50px 16px 26px;
+      margin: 0 0 32px;
+    }
+
+    @media @desktop {
+      padding: 16px 50px 16px 26px;
+      margin: 0 0 88px;
+    }
+
+    @media @desktop-min{
+      padding: 16px 50px 16px 26px;
+      margin: 0 0 108px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      right: 19px;
+      z-index: 3;
+      width: 18px;
+      height: 18px;
+      background-color: transparent;
+      background-image: url("../img/svg/arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:hover {
+      background-color: @review;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__main-image {
+    @media @mobile {
+      display: block;
+      height: 448px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    @media @tablet-interval {
+      display: block;
+      height: 350px;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+}

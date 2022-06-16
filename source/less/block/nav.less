@@ -1,0 +1,53 @@
+@import "../variables.less";
+@import "../libs/grid.less";
+
+.nav {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 500px;
+  margin-top: 14px;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    padding-bottom: 12px;
+  }
+
+  @media @tablet-interval {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+
+  &__link {
+    font-weight: 500;
+    color: @heading-text;
+
+    @media @mobile {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    @media @tablet-interval {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    @media @desktop {
+      margin-right: 30px;
+    }
+
+    @media @desktop-min {
+      margin-right: 44px;
+    }
+
+    &:hover {
+      color: @review;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
