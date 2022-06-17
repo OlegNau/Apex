@@ -1,5 +1,6 @@
 @import "../variables.less";
 @import "../libs/grid.less";
+@import "../typography.less";
 
 .features {
 
@@ -11,25 +12,21 @@
    width: 100%;
    font-family: 'Jost', sans-serif;
    text-align: center;
-   font-weight: 700;
    color: @heading-text;
 
    @media @mobile {
+     .h3-mobile();
      margin-bottom: 24px;
-     font-size: 32px;
-     line-height: 40px;
    }
 
    @media @tablet-interval {
+     .h3();
      margin-bottom: 24px;
-     font-size: 36px;
-     line-height: 56px;
    }
 
    @media @desktop {
+     .h3();
      margin-bottom: 44px;
-     font-size: 36px;
-     line-height: 56px;
    }
 
    @media @desktop-min {
@@ -45,12 +42,11 @@
 
     @media @mobile {
       flex-direction: column;
-      padding: 20px 33px 20px 33px;
+      padding: 20px 32px 20px 32px;
       margin-bottom: 5px;
     }
 
     @media @tablet-interval {
-      flex-direction: row;
       width: 60%;
       margin: 0 auto 20px;
     }
@@ -71,10 +67,6 @@
       margin-bottom: 16px;
     }
 
-    @media @tablet-interval {
-      margin-bottom: 0;
-    }
-
     @media @desktop {
       align-self: center;
       margin-bottom: 12px;
@@ -93,7 +85,6 @@
 
     @media @desktop {
       align-self: center;
-      margin-left: 0;
       text-align: center;
     }
 
@@ -106,27 +97,26 @@
     display: inline-block;
     margin-bottom: 12px;
     vertical-align: baseline;
-    font-size: 20px;
-    line-height: 33px;
     color: @heading-text;
 
     @media @mobile {
+      .h4();
       font-weight: 500;
     }
 
     @media @tablet-interval {
+      .h4();
       font-family: 'Jost', sans-serif;
-      font-weight: 700;
     }
 
     @media @desktop {
+      .h4();
       font-family: 'Jost', sans-serif;
-      font-weight: 700;
     }
 
     @media @desktop-min{
+      .h4();
       font-family: 'Jost', sans-serif;
-      font-weight: 700;
     }
   }
 }

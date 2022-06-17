@@ -1,30 +1,31 @@
 @import "../variables.less";
 @import "../libs/grid.less";
+@import "../typography.less";
 
 .nav {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 500px;
-  margin-top: 14px;
+  margin-top: 16px;
 
-  @media @mobile {
+  &__list {
     display: flex;
-    flex-direction: column;
-    max-width: none;
-    padding-bottom: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 500px;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      max-width: none;
+      padding-bottom: 12px;
+    }
+
+    @media @tablet-interval {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 12px;
+    }
   }
 
-  @media @tablet-interval {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 12px;
-  }
-
-  &__link {
-    font-weight: 500;
-    color: @heading-text;
-
+  &__element {
     @media @mobile {
       margin-bottom: 12px;
       text-align: center;
@@ -42,9 +43,14 @@
     @media @desktop-min {
       margin-right: 44px;
     }
+  }
+
+  &__link {
+    .buttons-font();
+    color: @heading-text;
 
     &:hover {
-      color: @review;
+      color: @accent-color;
     }
     &:active {
       opacity: 0.5;

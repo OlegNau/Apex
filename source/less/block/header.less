@@ -1,14 +1,16 @@
 @import "../variables.less";
 @import "../libs/grid.less";
+@import "../typography.less";
 
 .header {
   @media @mobile {
-    padding: 18px 0;
+    position: relative;
+    padding: 16px 0;
   }
 
   @media @tablet-interval {
     position: relative;
-    padding: 15px 0;
+    padding: 16px 0;
   }
 
   @media @desktop {
@@ -26,6 +28,7 @@
     @media @mobile {
       width: 50px;
       height: 20px;
+      margin-top: 4px;
     }
 
     @media @tablet-interval {
@@ -63,7 +66,7 @@
       padding: 60px 24px 12px;
       border-radius: 0 0 0 8px;
       box-shadow: 0 0 5px 5px @light-background;
-      background-color: @white;
+      background-color: @base-color;
       transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
@@ -78,17 +81,17 @@
       padding: 60px 24px 12px;
       border-radius: 0 0 0 8px;
       box-shadow: 0 0 5px 5px @light-background;
-      background-color: @white;
+      background-color: @base-color;
       transition: top 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &_active {
       @media @mobile {
-        top: -15px;
+        top: -16px;
       }
 
       @media @tablet-interval {
-        top: -15px;
+        top: -16px;
       }
     }
   }
@@ -96,7 +99,6 @@
   &__login {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
 
     @media @mobile {
       flex-direction: column;
@@ -108,80 +110,42 @@
       justify-content: flex-start;
     }
 
+    @media @desktop {
+      justify-content: flex-end;
+    }
+
     @media @desktop-min {
+      justify-content: flex-end;
       max-width: 292px;
     }
   }
 
   &__login-button {
-    font-weight: 500;
-    line-height: 30px;
+    .buttons-font();
     color: @heading-text;
 
     @media @mobile {
       align-self: center;
-      margin-top: 0;
       margin-bottom: 8px;
     }
 
     @media @tablet-interval {
       align-self: center;
-      margin-top: 0;
       margin-bottom: 8px;
     }
 
     @media @desktop {
       align-self: start;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     @media @desktop-min {
       align-self: start;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     &:hover {
-      color: @review;
-    }
-    &:active {
-      opacity: 0.5;
-    }
-  }
-
-  &__registration-button {
-    display: inline-block;
-    height: min-content;
-    padding: 13px 20px;
-    border-radius: 8px;
-    margin-left: 36px;
-    font-weight: 500;
-    vertical-align: baseline;
-    color: @white;
-    background-color: @button;
-
-    @media @mobile {
-      width: 167px;
-      padding: 8px 12px;
-      margin: 0 auto;
-    }
-
-    @media @tablet-interval {
-      padding: 8px 12px;
-      margin-left: 0;
-    }
-
-    @media @desktop {
-      margin-top: 4px;
-      margin-left: 20px;
-    }
-
-    @media @desktop-min {
-      margin-top: 4px;
-      margin-left: 36px;
-    }
-
-    &:hover {
-      background-color: @review;
+      color: @accent-color;
     }
     &:active {
       opacity: 0.5;
@@ -207,8 +171,8 @@
       right: 0;
       z-index: 1001;
       display: block;
-      width: 75px;
-      height: 75px;
+      width: 76px;
+      height: 76px;
       padding: 24px 24px;
       cursor: pointer;
     }
@@ -224,11 +188,10 @@
     &-icon {
       @media @mobile {
         position: absolute;
-        top: 30px;
+        top: 28px;
         display: block;
         width: 24px;
         height: 2px;
-        border-radius: 1px;
         background-color: @heading-text;
         transition: 0.3s;
       }
@@ -239,7 +202,6 @@
         top: 40px;
         display: block;
         width: 24px;
-        border-radius: 1px;
         background-color: @heading-text;
         transition: 0.3s;
       }
@@ -252,7 +214,6 @@
           display: block;
           width: 24px;
           height: 2px;
-          border-radius: 1px;
           background-color: @heading-text;
           transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
         }
@@ -278,7 +239,6 @@
           display: block;
           width: 100%;
           height: 2px;
-          border-radius: 1px;
           background-color: @heading-text;
           transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
         }
@@ -290,7 +250,6 @@
           display: block;
           width: 100%;
           height: 2px;
-          border-radius: 1px;
           background-color: @heading-text;
           transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
         }
@@ -302,7 +261,7 @@
         position: fixed;
 
         & .header__toggle-icon {
-          background-color: @white;
+          background-color: @base-color;
 
           &::before {
             top: 0;
@@ -322,7 +281,7 @@
         position: fixed;
 
         & .header__toggle-icon {
-          background-color: @white;
+          background-color: @base-color;
 
           &::before {
             top: 0;

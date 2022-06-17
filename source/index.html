@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <title>Apex</title>
-    <link href="build/css/style.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost:wght@600&display=swap" rel="stylesheet">
-    </head>
-<body class="body">
+    <link href="build/css/style.min.css" rel="stylesheet">
+</head>
+<body>
     <header class="header">
         <div class="container">
             <div class="row">
@@ -19,15 +19,28 @@
                 <div class="col_lg-9 col-offset_lg-1 col_md-9 col_xs-7">
                     <div class="header__nav-and-login">
                         <nav class="nav">
-                            <a href="#" class="nav__link">Demos</a>
-                            <a href="#" class="nav__link">About</a>
-                            <a href="#" class="nav__link">Blog</a>
-                            <a href="#" class="nav__link">Pages</a>
-                            <a href="#" class="nav__link">Contact</a>
+                            <ul class="nav__list">
+                                <li class="nav__element">
+                                    <a href="#" class="nav__link">Demos</a>
+                                </li>
+                                <li class="nav__element">
+                                    <a href="#" class="nav__link">About</a>
+                                </li>
+                                <li class="nav__element">
+                                    <a href="#" class="nav__link">Blog</a>
+                                </li>
+                                <li class="nav__element">
+                                    <a href="#" class="nav__link">Pages</a>
+                                </li>
+                                <li class="nav__element">
+                                    <a href="#" class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+
                         </nav>
                         <div class="header__login">
                             <button class="header__login-button">Login</button>
-                            <button class="header__registration-button">Get Started Free</button>
+                            <button class="button button_header">Get Started Free</button>
                         </div>
                     </div>
                     <button class="header__toggle header__toggle_active">
@@ -51,7 +64,7 @@
                         <div class="home__container">
                             <h1>Start chatting with customers, anytime, anywhere with Apex</h1>
                             <p class="home__text">Great software that allows you to&nbsp;chat from any place at&nbsp;any time without any interruption.</p>
-                            <button class="home__button">Start Chatting Now</button>
+                            <button class="button button_home">Start Chatting Now</button>
                             <div class="counters">
                                 <div class="counters__customers-container">
                                     <picture>
@@ -87,7 +100,7 @@
                         <div class="features__item">
                             <img src="build/img/svg/features/video.svg" class="features__image" width="60" alt="Video messaging">
                             <div class="features__text-container">
-                                <span class="features__name">Video messaging</span>
+                                <h3 class="features__name">Video messaging</h3>
                                 <p class="features__description">This software is&nbsp;very easy for you to&nbsp;manage. You can use it&nbsp;as&nbsp;you wish.</p>
                             </div>
                         </div>
@@ -96,7 +109,7 @@
                         <div class="features__item">
                             <img src="build/img/svg/features/time.svg" class="features__image" width="60" alt="save you time">
                             <div class="features__text-container">
-                                <span class="features__name">Save your time</span>
+                                <h3 class="features__name">Save your time</h3>
                                 <p class="features__description">This software is&nbsp;very easy for you to&nbsp;manage. You can use it&nbsp;as&nbsp;you wish.</p>
                             </div>
                         </div>
@@ -105,7 +118,7 @@
                         <div class="features__item">
                             <img src="build/img/svg/features/private.svg" class="features__image" width="60" alt="">
                             <div class="features__text-container">
-                                <span class="features__name">Keep safe & private</span>
+                                <h3 class="features__name">Keep safe & private</h3>
                                 <p class="features__description">This software is&nbsp;very easy for you to&nbsp;manage. You can use it&nbsp;as&nbsp;you wish.</p>
                             </div>
                         </div>
@@ -113,10 +126,8 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
-
     </footer>
 <script src="build/js/script.min.js">
 </script>
