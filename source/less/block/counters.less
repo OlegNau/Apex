@@ -1,0 +1,85 @@
+@import "../variables.less";
+@import "../media.less";
+@import "../typography.less";
+
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  &__customers {
+
+    &-container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media @mobile {
+        margin-bottom: 24px;
+      }
+
+      @media @tablet-min {
+        margin-right: 52px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: @heading-text;
+
+        @media @mobile {
+          left: 0;
+          bottom: -12px;
+          width: 52px;
+          height: 2px;
+        }
+
+        @media @tablet-min {
+          top: 16px;
+          right: -28px;
+          width: 2px;
+          height: 40px;
+        }
+      }
+    }
+
+    &-image {
+      @media @mobile {
+        margin-right: 20px;
+      }
+
+      @media @desktop-interval {
+        width: 100px;
+        margin-top: 12px;
+        margin-right: 12px;
+      }
+
+      @media @desktop-min {
+        margin-right: 20px;
+      }
+    }
+
+    &-number {
+      .accent-number();
+      color: @heading-text;
+    }
+  }
+
+  &__rating {
+
+    &-number {
+      .accent-number();
+      color: @heading-text;
+    }
+
+    &-image {
+      width: 76px;
+      height: 12px;
+      margin-right: 8px;
+    }
+  }
+}

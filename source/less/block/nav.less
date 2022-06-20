@@ -1,0 +1,55 @@
+@import "../variables.less";
+@import "../media.less";
+@import "../typography.less";
+
+.nav {
+  margin-top: 16px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media @mobile {
+      max-width: none;
+    }
+
+    @media @tablet-min {
+    max-width: 500px;
+  }
+
+    @media @tablet-max {
+      flex-direction: column;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__element {
+
+    @media @tablet-max {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    @media @desktop-interval {
+      margin-right: 30px;
+    }
+
+    @media @desktop-min {
+      margin-right: 44px;
+    }
+  }
+
+  &__link {
+    .buttons-font();
+    color: @heading-text;
+
+    &:hover {
+      color: @accent-color;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

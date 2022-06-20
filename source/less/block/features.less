@@ -1,0 +1,89 @@
+@import "../variables.less";
+@import "../media.less";
+@import "../typography.less";
+
+.features {
+
+  @media @mobile {
+    padding-top: 20px;
+  }
+
+ &__heading {
+   .h3();
+   width: 100%;
+   text-align: center;
+   color: @heading-text;
+
+   @media @tablet-max {
+     margin-bottom: 24px;
+   }
+
+   @media @desktop {
+     margin-bottom: 44px;
+   }
+ }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+
+    @media @mobile {
+      flex-direction: column;
+      padding: 20px 32px 20px 32px;
+      margin-bottom: 5px;
+    }
+
+    @media @tablet-interval {
+      width: 60%;
+      margin: 0 auto 20px;
+    }
+
+    @media @desktop {
+      padding: 28px 12px 32px 28px;
+    }
+
+    @media @desktop-interval {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    @media @mobile {
+      align-self: center;
+      margin-bottom: 16px;
+    }
+
+    @media @desktop-interval {
+      align-self: center;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text-container {
+    @media @mobile {
+      align-self: center;
+      text-align: center;
+    }
+
+    @media @tablet-interval {
+      margin-left: 24px;
+    }
+
+    @media @desktop-interval {
+      align-self: center;
+      text-align: center;
+    }
+
+    @media @desktop-min {
+      margin-left: 24px;
+    }
+  }
+
+  &__name {
+    .h4();
+    display: inline-block;
+    margin-bottom: 12px;
+    vertical-align: baseline;
+    color: @heading-text;
+  }
+}
