@@ -1,5 +1,5 @@
 @import "../variables.less";
-@import "../libs/grid.less";
+@import "../media.less";
 @import "../typography.less";
 
 .nav {
@@ -9,34 +9,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 500px;
 
     @media @mobile {
-      display: flex;
-      flex-direction: column;
       max-width: none;
-      padding-bottom: 12px;
     }
 
-    @media @tablet-interval {
-      display: flex;
+    @media @tablet-min {
+    max-width: 500px;
+  }
+
+    @media @tablet-max {
       flex-direction: column;
       padding-bottom: 12px;
     }
   }
 
   &__element {
-    @media @mobile {
+
+    @media @tablet-max {
       margin-bottom: 12px;
       text-align: center;
     }
 
-    @media @tablet-interval {
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    @media @desktop {
+    @media @desktop-interval {
       margin-right: 30px;
     }
 
@@ -52,6 +47,7 @@
     &:hover {
       color: @accent-color;
     }
+
     &:active {
       opacity: 0.5;
     }

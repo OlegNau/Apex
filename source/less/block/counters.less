@@ -1,5 +1,5 @@
 @import "../variables.less";
-@import "../libs/grid.less";
+@import "../media.less";
 @import "../typography.less";
 
 .counters {
@@ -18,20 +18,11 @@
       display: flex;
       flex-wrap: wrap;
 
-
       @media @mobile {
         margin-bottom: 24px;
       }
 
-      @media @tablet-interval {
-        margin-right: 52px;
-      }
-
-      @media @desktop {
-        margin-right: 52px;
-      }
-
-      @media @desktop-min {
+      @media @tablet-min {
         margin-right: 52px;
       }
 
@@ -47,21 +38,7 @@
           height: 2px;
         }
 
-        @media @tablet-interval {
-          top: 16px;
-          right: -28px;
-          width: 2px;
-          height: 40px;
-        }
-
-        @media @desktop {
-          top: 16px;
-          right: -28px;
-          width: 2px;
-          height: 40px;
-        }
-
-        @media @desktop-min {
+        @media @tablet-min {
           top: 16px;
           right: -28px;
           width: 2px;
@@ -75,7 +52,7 @@
         margin-right: 20px;
       }
 
-      @media @desktop {
+      @media @desktop-interval {
         width: 100px;
         margin-top: 12px;
         margin-right: 12px;

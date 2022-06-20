@@ -1,31 +1,54 @@
-.h1() {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 60px;
-}
+@import "media.less";
 
-.h1-mobile() {
+.h1() {
+  font-family: 'Jost', sans-serif;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 49px;
+
+  @media @mobile {
+    font-size: 34px;
+    line-height: 49px;
+  }
+
+  @media @tablet-min {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .h2() {
+  font-family: 'Jost', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
 }
 
 .h3() {
+  font-family: 'Jost', sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 56px;
+
+  @media @mobile {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media @tablet-min {
+    font-size: 36px;
+    line-height: 56px;
+  }
 }
 
-.h3-mobile() {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+.h4() {
+  font-size: 21px;
+  line-height: 33px;
+
+  @media @mobile {
+    font-weight: 500;
+  }
+
+  @media @tablet-min {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+  }
 }
 
 .buttons-font() {
@@ -41,13 +64,8 @@
   letter-spacing: -1px;
 }
 
-.h4() {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 33px;
-}
-
 .p1() {
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;

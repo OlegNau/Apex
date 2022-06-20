@@ -1,11 +1,4 @@
-// Брейкпойнты
-@mobile: ~"screen and (max-width: 767px)";
-
-@tablet-interval: ~"(min-width: 768px) and (max-width: 1023px)";
-
-@desktop: ~"(min-width: 1024px) and (max-width: 1295px)";
-
-@desktop-min: ~"screen and (min-width: 1296px)";
+@import "../media.less";
 
 .container {
   margin: 0 auto;
@@ -19,7 +12,7 @@
     padding: 0 8px;
   }
 
-  @media @desktop {
+  @media @desktop-interval {
     max-width: 1024px;
     padding: 0 16px;
   }
@@ -74,7 +67,7 @@
     margin-right: -8px;
   }
 
-  @media @desktop {
+  @media @desktop-interval {
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -94,7 +87,7 @@
     .generate-columns(sm, 12, 8px);
   }
 
-  @media @desktop {
+  @media @desktop-interval {
     .generate-columns(md, 12, 16px);
   }
 
@@ -112,7 +105,7 @@
     .generate-offset-columns(sm, 12);
   }
 
-  @media @desktop {
+  @media @desktop-interval {
     .generate-offset-columns(md, 12);
   }
 

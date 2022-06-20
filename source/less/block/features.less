@@ -1,5 +1,5 @@
 @import "../variables.less";
-@import "../libs/grid.less";
+@import "../media.less";
 @import "../typography.less";
 
 .features {
@@ -9,30 +9,17 @@
   }
 
  &__heading {
+   .h3();
    width: 100%;
-   font-family: 'Jost', sans-serif;
    text-align: center;
    color: @heading-text;
 
-   @media @mobile {
-     .h3-mobile();
-     margin-bottom: 24px;
-   }
-
-   @media @tablet-interval {
-     .h3();
+   @media @tablet-max {
      margin-bottom: 24px;
    }
 
    @media @desktop {
-     .h3();
      margin-bottom: 44px;
-   }
-
-   @media @desktop-min {
-     margin-bottom: 44px;
-     font-size: 36px;
-     line-height: 56px;
    }
  }
 
@@ -52,12 +39,11 @@
     }
 
     @media @desktop {
-      flex-direction: column;
       padding: 28px 12px 32px 28px;
     }
 
-    @media @desktop-min {
-      padding: 28px 12px 32px 28px;
+    @media @desktop-interval {
+      flex-direction: column;
     }
   }
 
@@ -67,7 +53,7 @@
       margin-bottom: 16px;
     }
 
-    @media @desktop {
+    @media @desktop-interval {
       align-self: center;
       margin-bottom: 12px;
     }
@@ -83,7 +69,7 @@
       margin-left: 24px;
     }
 
-    @media @desktop {
+    @media @desktop-interval {
       align-self: center;
       text-align: center;
     }
@@ -94,29 +80,10 @@
   }
 
   &__name {
+    .h4();
     display: inline-block;
     margin-bottom: 12px;
     vertical-align: baseline;
     color: @heading-text;
-
-    @media @mobile {
-      .h4();
-      font-weight: 500;
-    }
-
-    @media @tablet-interval {
-      .h4();
-      font-family: 'Jost', sans-serif;
-    }
-
-    @media @desktop {
-      .h4();
-      font-family: 'Jost', sans-serif;
-    }
-
-    @media @desktop-min{
-      .h4();
-      font-family: 'Jost', sans-serif;
-    }
   }
 }

@@ -1,5 +1,5 @@
 @import "../variables.less";
-@import "../libs/grid.less";
+@import "../media.less";
 @import "../typography.less";
 
 .home {
@@ -15,10 +15,6 @@
     padding: 40px 0;
   }
 
-  @media @desktop-min {
-    padding: 40px 0;
-  }
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -26,26 +22,22 @@
   }
 
   & h1 {
-    font-family: 'Jost', sans-serif;
+    .h1();
     color: @heading-text;
 
     @media @mobile {
-      .h1-mobile();
       margin: 0 0 16px;
     }
 
     @media @tablet-interval {
-      .h1();
       margin: 20px 0 20px;
     }
 
-    @media @desktop {
-      .h1();
+    @media @desktop-interval {
       max-width: 510px;
     }
 
     @media @desktop-min {
-      .h1();
       max-width: 508px;
       margin: 28px 0 28px;
     }
@@ -53,37 +45,24 @@
 
   &__text {
     .p2();
-
-    @media @mobile {
-      margin: 0 0 24px;
-    }
-
-    @media @tablet-interval {
-      margin: 0 0 24px;
-    }
+    margin: 0 0 24px;
 
     @media @desktop {
       width: 440px;
-      margin: 0 0 28px;
-    }
-
-    @media @desktop-min {
-      width: 440px;
-      margin: 0 0 28px;
     }
   }
 
   &__main-image {
     @media @mobile {
-      display: block;
       height: 448px;
-      object-fit: contain;
-      margin: 0 auto;
     }
 
     @media @tablet-interval {
-      display: block;
       height: 352px;
+    }
+
+    @media @tablet-max {
+      display: block;
       object-fit: contain;
       margin: 0 auto;
     }

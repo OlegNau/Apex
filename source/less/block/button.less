@@ -1,4 +1,4 @@
-@import "../libs/grid.less";
+@import "../media.less";
 @import "../variables.less";
 @import "../typography.less";
 
@@ -11,19 +11,11 @@
   color: @base-color;
   background-color: @button-color;
 
-  @media @mobile {
-    padding: 16px 20px;
-  }
-
-  @media @tablet-interval {
+  @media @tablet-max {
     padding: 16px 20px;
   }
 
   @media @desktop {
-    padding: 16px 20px;
-  }
-
-  @media @desktop-min {
     padding: 16px 20px;
   }
 
@@ -50,12 +42,13 @@
     @media @desktop {
       padding: 12px 20px;
       margin-top: 4px;
+    }
+
+    @media @desktop-interval {
       margin-left: 20px;
     }
 
     @media @desktop-min {
-      padding: 12px 20px;
-      margin-top: 4px;
       margin-left: 36px;
     }
   }
@@ -67,21 +60,22 @@
 
     @media @mobile {
       padding-right: 44px;
-      margin: 0 0 32px;
     }
 
     @media @tablet-interval {
       padding: 16px 52px 16px 24px;
+    }
+
+    @media @tablet-max {
       margin: 0 0 32px;
     }
 
-    @media @desktop {
+    @media @desktop-interval {
       padding: 16px 52px 16px 24px;
       margin: 0 0 88px;
     }
 
     @media @desktop-min {
-      padding: 16px 52px 16px 24px;
       margin: 0 0 108px;
     }
 
