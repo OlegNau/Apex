@@ -1,7 +1,8 @@
 @import "media.less";
+@import "variables.less";
 
 .h1() {
-  font-family: 'Jost', sans-serif;
+  font-family: @heading;
   font-weight: 700;
 
   @media @mobile {
@@ -16,14 +17,14 @@
 }
 
 .h2() {
-  font-family: 'Jost', sans-serif;
+  font-family: @heading;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
 }
 
 .h3() {
-  font-family: 'Jost', sans-serif;
+  font-family: @heading;
   font-weight: 700;
 
   @media @mobile {
@@ -46,7 +47,7 @@
   }
 
   @media @tablet-min {
-    font-family: 'Jost', sans-serif;
+    font-family: @heading;
     font-weight: 700;
   }
 }
@@ -65,7 +66,7 @@
 }
 
 .p1() {
-  font-family: "DM Sans", sans-serif;
+  font-family: @paragraph;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;

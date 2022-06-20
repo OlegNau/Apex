@@ -370,11 +370,6 @@ body {
   word-wrap: break-word;
   word-break: break-word;
 }
-/*
- TODO выпилить после того как popup оплаты
- перестанет присылать -webkit-perspective: 1000;
-*/
-/* TODO потому что это может ломать popup оплаты на планшетах */
 html {
   -webkit-perspective: none !important;
 }
