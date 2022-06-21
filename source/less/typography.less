@@ -19,8 +19,16 @@
 .h2() {
   font-family: @heading;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+
+  @media @mobile {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media @tablet-min {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 .h3() {

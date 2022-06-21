@@ -1,0 +1,161 @@
+@import "../variables.less";
+@import "../typography.less";
+
+.selling {
+  @media @tablet-max {
+   padding: 40px 0;
+  }
+  @media @desktop {
+    padding: 110px 0 72px;
+  }
+
+  &__container {
+    display: flex;
+
+    @media @tablet-max {
+      flex-flow: column-reverse;
+    }
+  }
+
+  &__text-container {
+
+    @media @mobile {
+      margin-top: 28px;
+    }
+
+    @media @tablet-min {
+      margin-top: 48px;
+    }
+  }
+
+  &__heading {
+    .h2();
+
+    @media @tablet-max {
+      margin-bottom: 16px;
+    }
+
+    @media @desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__paragraph {
+    @media @tablet-max {
+      margin-bottom: 30px;
+    }
+
+    @media @desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    box-shadow: 0px 44px 60px @shadow-selling-image;
+
+    @media @mobile {
+      width: 204px;
+    }
+
+    @media @tablet-interval {
+      width: 280px;
+    }
+
+    @media @desktop {
+      width: 364px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      display: block;
+      border-radius: 10px;
+      background-image: url("../img/selling/question.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media @mobile {
+        top: 56px;
+        left: -72px;
+        width: 96px;
+        height: 68px;
+      }
+
+      @media @tablet-interval {
+        left: -112px;
+        bottom: 20px;
+        width: 160px;
+        height: 108px;
+      }
+
+      @media @tablet-max {
+        background-size: 100%;
+      }
+
+      @media @desktop {
+        bottom: -36px;
+        width: 200px;
+        height: 144px;
+      }
+
+      @media @desktop-interval {
+        left: -110px;
+      }
+
+      @media @desktop-min {
+        left: -140px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0px 4px 48px @shadow-selling-image;
+      background-image: url("../img/selling/call.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media @mobile {
+        right: -64px;
+        bottom: 44px;
+        width: 76px;
+        height: 96px;
+        background-size: 100%;
+      }
+
+      @media @tablet-interval {
+        right: -84px;
+        bottom: 70px;
+        width: 104px;
+        height: 132px;
+    }
+
+      @media @tablet-max {
+        background-size: 100%;
+      }
+
+      @media @desktop {
+        bottom: 84px;
+        width: 136px;
+        height: 172px;
+      }
+
+      @media @desktop-interval {
+        right: -60px;
+      }
+
+      @media @desktop-min {
+        right: -84px;
+      }
+    }
+  }
+}
