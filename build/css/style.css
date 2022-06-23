@@ -1673,15 +1673,8 @@ img {
     width: 432px;
   }
 }
-@media screen and (max-width: 1023px) {
-  .selling {
-    padding: 40px 0;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .selling {
-    padding: 110px 0 72px;
-  }
+.selling {
+  padding: 40px 0;
 }
 .selling__container {
   display: flex;
@@ -1691,14 +1684,9 @@ img {
     flex-flow: column-reverse;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1023px) {
   .selling__text-container {
-    margin-top: 28px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .selling__text-container {
-    margin-top: 48px;
+    margin-top: 116px;
   }
 }
 .selling__heading {
@@ -1737,125 +1725,26 @@ img {
     margin-bottom: 40px;
   }
 }
-.selling__image-container {
-  position: relative;
-  z-index: 2;
+.selling__image {
   display: block;
-  margin: 0 auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  box-shadow: 0px 44px 60px rgba(0, 0, 0, 0.08);
-}
-@media screen and (max-width: 767px) {
-  .selling__image-container {
-    width: 204px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .selling__image-container {
-    width: 280px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .selling__image-container {
-    width: 364px;
-  }
-}
-.selling__image-container::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  display: block;
-  border-radius: 10px;
-  background-image: url("../img/selling/question.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media screen and (max-width: 767px) {
-  .selling__image-container::before {
-    top: 56px;
-    left: -72px;
-    width: 96px;
-    height: 68px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .selling__image-container::before {
-    left: -112px;
-    bottom: 20px;
-    width: 160px;
-    height: 108px;
-  }
 }
 @media screen and (max-width: 1023px) {
-  .selling__image-container::before {
-    background-size: 100%;
+  .selling__image {
+    height: 400px;
+    margin: 0 auto;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media screen and (min-width: 1023px) {
-  .selling__image-container::before {
-    bottom: -36px;
-    width: 200px;
-    height: 144px;
+  .selling__image {
+    width: 704px;
+    height: 588px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1295px) {
-  .selling__image-container::before {
-    left: -110px;
-  }
-}
-@media screen and (min-width: 1296px) {
-  .selling__image-container::before {
-    left: -140px;
-  }
-}
-.selling__image-container::after {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.08);
-  background-image: url("../img/selling/call.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media screen and (max-width: 767px) {
-  .selling__image-container::after {
-    right: -64px;
-    bottom: 44px;
-    width: 76px;
-    height: 96px;
-    background-size: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .selling__image-container::after {
-    right: -84px;
-    bottom: 70px;
-    width: 104px;
-    height: 132px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .selling__image-container::after {
-    background-size: 100%;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .selling__image-container::after {
-    bottom: 84px;
-    width: 136px;
-    height: 172px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1295px) {
-  .selling__image-container::after {
-    right: -60px;
-  }
-}
-@media screen and (min-width: 1296px) {
-  .selling__image-container::after {
-    right: -84px;
+  .selling__image {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
