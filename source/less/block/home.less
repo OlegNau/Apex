@@ -1,70 +1,70 @@
-@import "../variables.less";
-@import "../media.less";
-@import "../typography.less";
+@import '../variables.less';
+@import '../media.less';
+@import '../typography.less';
 
 .home {
-  @media @mobile {
-    padding: 12px 0;
-  }
-
-  @media @tablet-interval {
-    padding: 20px 0;
-  }
-
-  @media @desktop {
-    padding: 40px 0;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  & h1 {
-    .h1();
-    color: @heading-text;
-
     @media @mobile {
-      margin: 0 0 16px;
+        padding: 12px 0;
     }
 
     @media @tablet-interval {
-      margin: 20px 0 20px;
+        padding: 20px 0;
     }
-
-    @media @desktop-interval {
-      max-width: 510px;
-    }
-
-    @media @desktop-min {
-      max-width: 508px;
-      margin: 28px 0 28px;
-    }
-  }
-
-  &__text {
-    .p2();
-    margin: 0 0 24px;
 
     @media @desktop {
-      width: 440px;
-    }
-  }
-
-  &__main-image {
-    @media @mobile {
-      height: 448px;
+        padding: 40px 0;
     }
 
-    @media @tablet-interval {
-      height: 352px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    @media @tablet-max {
-      display: block;
-      object-fit: contain;
-      margin: 0 auto;
+    & h1 {
+        .h1();
+        color: @heading-text;
+
+        @media @mobile {
+            margin: 0 0 16px;
+        }
+
+        @media @tablet-interval {
+            margin: 20px 0 20px;
+        }
+
+        @media @desktop-interval {
+            max-width: 510px;
+        }
+
+        @media @desktop-min {
+            max-width: 508px;
+            margin: 28px 0 28px;
+        }
     }
-  }
+
+    &__text {
+        .p2();
+        margin: 0 0 24px;
+
+        @media @desktop {
+            width: 440px;
+        }
+    }
+
+    &__main-image {
+        @media @mobile {
+            height: 448px;
+        }
+
+        @media @tablet-interval {
+            height: 352px;
+        }
+
+        @media @tablet-max {
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+    }
 }

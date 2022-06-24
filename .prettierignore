@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+
+**/package-lock.json
+*.md
+/dist
+/modern
+/tmp
+/cache
+/coverage
+/bundle-analyzer
+/allure-results
+appConfigs/browser/config.js
+
+.gitlab-ci-compliance.yml

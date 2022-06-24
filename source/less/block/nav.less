@@ -1,56 +1,55 @@
-@import "../variables.less";
-@import "../media.less";
-@import "../typography.less";
+@import '../variables.less';
+@import '../media.less';
+@import '../typography.less';
 
 .nav {
-  margin-top: 16px;
+    margin-top: 16px;
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    @media @mobile {
-      max-width: none;
+        @media @mobile {
+            max-width: none;
+        }
+
+        @media @tablet-min {
+            max-width: 500px;
+        }
+
+        @media @tablet-max {
+            flex-direction: column;
+            padding-bottom: 12px;
+        }
     }
 
-    @media @tablet-min {
-    max-width: 500px;
-  }
+    &__element {
+        @media @tablet-max {
+            margin-bottom: 12px;
+            text-align: center;
+        }
 
-    @media @tablet-max {
-      flex-direction: column;
-      padding-bottom: 12px;
-    }
-  }
+        @media @desktop-interval {
+            margin-right: 30px;
+        }
 
-  &__element {
-
-    @media @tablet-max {
-      margin-bottom: 12px;
-      text-align: center;
+        @media @desktop-min {
+            margin-right: 44px;
+        }
     }
 
-    @media @desktop-interval {
-      margin-right: 30px;
-    }
+    &__link {
+        .buttons-font();
+        color: @heading-text;
+        transition: background-color 0.4s linear;
 
-    @media @desktop-min {
-      margin-right: 44px;
-    }
-  }
+        &:hover {
+            color: @accent-color;
+        }
 
-  &__link {
-    .buttons-font();
-    color: @heading-text;
-    transition: background-color 0.4s linear;
-
-    &:hover {
-      color: @accent-color;
+        &:active {
+            opacity: 0.5;
+        }
     }
-
-    &:active {
-      opacity: 0.5;
-    }
-  }
 }
