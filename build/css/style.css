@@ -924,7 +924,7 @@ img {
   vertical-align: baseline;
   color: #FFFFFF;
   background-color: #FB8E0B;
-  transition: 0.4s;
+  transition: background-color 0.4s linear;
 }
 @media screen and (max-width: 1023px) {
   .button {
@@ -1150,7 +1150,7 @@ img {
   font-size: 16px;
   line-height: 26px;
   color: #1B1C20;
-  transition: 0.4s;
+  transition: background-color 0.4s linear;
 }
 .nav__link:hover {
   color: #FD6003;
@@ -1248,7 +1248,7 @@ img {
   font-size: 16px;
   line-height: 26px;
   color: #1B1C20;
-  transition: 0.4s;
+  transition: background-color 0.4s linear;
 }
 @media screen and (max-width: 1023px) {
   .header__login-button {
@@ -1314,7 +1314,7 @@ img {
     width: 24px;
     height: 2px;
     background-color: #1B1C20;
-    transition: 0.3s;
+    transition: background-color 0.4s linear;
   }
 }
 @media screen and (max-width: 767px) {

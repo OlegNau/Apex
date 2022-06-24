@@ -17,8 +17,11 @@
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "7.0.1",
     "gulp-uglify": "3.0.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
     "postcss": "8.1.7",
     "postcss-csso": "5.0.0",
+    "prettier": "^2.7.1",
     "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -27,7 +30,9 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp  build",
-    "start": "gulp"
+    "start": "gulp",
+    "lint:format": "prettier --list-different \"**/*.{ts,less,html,json}\"",
+    "lint:format:fix": "npm run lint:format -- --write"
   },
   "browserslist": [
     "last 2 versions",
