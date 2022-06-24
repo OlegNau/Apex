@@ -1314,7 +1314,6 @@ img {
     width: 24px;
     height: 2px;
     background-color: #1b1c20;
-    transition: background-color 0.4s linear;
   }
 }
 @media screen and (max-width: 767px) {
