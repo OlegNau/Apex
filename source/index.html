@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width,initial-scale=1" name="viewport" />
@@ -59,7 +59,7 @@
                         </div>
                         <button class="header__toggle header__toggle_active">
                             <!-- Меню активно при открытии страницы и закрывается после загрузки скриптов автоматически,
-                         реализовал для доступности страницы в случае если не заработают/не загрузятся скрипты-->
+                 реализовал для доступности страницы в случае если не заработают/не загрузятся скрипты-->
                             <span class="header__toggle-icon">
                                 <span class="visually-hidden">Меню</span>
                                 <!-- спан с классом visually-hidden сделал для чтения страницы черз скринридер -->
@@ -305,12 +305,184 @@
                                 <img
                                     src="build/img/selling/selling-desktop.png"
                                     srcset="
-                                        build/img/selling/selling-desktop-2x.jpg 2x
+                                        build/img/selling/selling-desktop-2x.png 2x
                                     "
                                     class="selling__image"
                                     alt="Selling dialogs"
                                 />
                             </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="orders">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg-6 col_md-6 col_sm-12 col_xs-12">
+                            <picture>
+                                <source
+                                    type="image/webp"
+                                    media="(max-width: 1023px)"
+                                    srcset="
+                                        build/img/orders/orders-tablet-mobile.webp    1x,
+                                        build/img/orders/orders-tablet-mobile-2x.webp 2x
+                                    "
+                                />
+                                <source
+                                    type="image/webp"
+                                    srcset="
+                                        build/img/orders/orders-desktop.webp    1x,
+                                        build/img/orders/orders-desktop-2x.webp 2x
+                                    "
+                                />
+                                <img
+                                    src="build/img/orders/orders-desktop.png"
+                                    srcset="
+                                        build/img/orders/orders-desktop-2x.png 2x
+                                    "
+                                    class="orders__image"
+                                    alt="New orders"
+                                />
+                            </picture>
+                        </div>
+                        <div
+                            class="col_lg-5 col-offset_lg-1 col_md-6 col_sm-12 col_xs-12"
+                        >
+                            <div class="orders__text-container">
+                                <h2 class="orders__heading">
+                                    Get direct orders from your customers
+                                </h2>
+                                <p class="orders__paragraph">
+                                    Create custom landing pages with Rareblocks
+                                    that converts more visitors than any
+                                    website. With lots of&nbsp;unique blocks
+                                    easily build a&nbsp;page. There are many
+                                    variations of&nbsp;passages
+                                    of&nbsp;available.
+                                </p>
+                                <div class="orders__statistics">
+                                    <div
+                                        class="orders__statistics-item orders__statistics-item_powering"
+                                    >
+                                        <span class="orders__statistics-number"
+                                            >4.3K+</span
+                                        >
+                                        <p class="orders__statistics-text">
+                                            Website’s Powering
+                                        </p>
+                                    </div>
+                                    <div class="orders__statistics-item">
+                                        <span class="orders__statistics-number"
+                                            >7M+</span
+                                        >
+                                        <p class="orders__statistics-text">
+                                            Chats in Last 2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg-12 col_md-12 col_sm-12 col_xs-12">
+                            <h2 class="reviews__heading">
+                                Our blessed client said about us 😍
+                            </h2>
+                        </div>
+                        <div class="col_lg-6 col_md-6 col_sm-12 col_xs-12">
+                            <div class="reviews__element">
+                                <div class="reviews__text-container">
+                                    <h4 class="reviews__element-heading">
+                                        “Incredible Experience”
+                                    </h4>
+                                    <p class="reviews__element-paragraph">
+                                        We&nbsp;had an&nbsp;incredible
+                                        experience working with Mixland and were
+                                        impressed they made such a&nbsp;big
+                                        difference in&nbsp;only three weeks. Our
+                                        team is&nbsp;so&nbsp;grateful for the
+                                        wonderful improvements they made and
+                                        their ability to&nbsp;get familiar with
+                                        the concept so&nbsp;quickly.
+                                    </p>
+                                </div>
+                                <div class="reviews__author">
+                                    <picture>
+                                        <source
+                                            type="image/webp"
+                                            srcset="
+                                                build/img/reviews/reviews-author-wade-warren.webp    1x,
+                                                build/img/reviews/reviews-author-wade-warren-2x.webp 2x
+                                            "
+                                        />
+                                        <img
+                                            src="build/img/reviews/reviews-author-wade-warren.png"
+                                            srcset="
+                                                build/img/reviews/reviews-author-wade-warren-2x.png 2x
+                                            "
+                                            class="reviews__author-photo"
+                                            alt="Wade Warren"
+                                        />
+                                    </picture>
+                                    <div class="reviews__author-text">
+                                        <span class="reviews__author-name"
+                                            >Wade Warren</span
+                                        >
+                                        <span class="reviews__author-position"
+                                            >CEO, ABC Corporation</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_lg-6 col_md-6 col_sm-12 col_xs-12">
+                            <div class="reviews__element">
+                                <div class="reviews__text-container">
+                                    <h4 class="reviews__element-heading">
+                                        “Dependable, Responsive, Professional”
+                                    </h4>
+                                    <p class="reviews__element-paragraph">
+                                        Fermin Apps has collaborated with
+                                        Mixland team for several projects such
+                                        as&nbsp;Photo Sharing Apps and Custom
+                                        Social Networking Apps. The experience
+                                        has been pleasant, professional and
+                                        exceeding our expectations. The team
+                                        is&nbsp;always thinking beyond.
+                                    </p>
+                                </div>
+                                <div class="reviews__author">
+                                    <picture>
+                                        <source
+                                            type="image/webp"
+                                            srcset="
+                                                build/img/reviews/reviews-author-esther-howard.webp    1x,
+                                                build/img/reviews/reviews-author-esther-howard-2x.webp 2x
+                                            "
+                                        />
+                                        <img
+                                            src="build/img/reviews/reviews-author-esther-howard.png"
+                                            srcset="
+                                                build/img/reviews/reviews-author-esther-howard-2x.png 2x
+                                            "
+                                            class="reviews__author-photo"
+                                            alt="Esther Howard"
+                                        />
+                                    </picture>
+                                    <div class="reviews__author-text">
+                                        <span class="reviews__author-name"
+                                            >Esther Howard</span
+                                        >
+                                        <span class="reviews__author-position"
+                                            >CEO, ABC Corporation</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

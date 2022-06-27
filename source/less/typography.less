@@ -60,6 +60,19 @@
     }
 }
 
+.h5() {
+    font-weight: 700;
+
+    @media @mobile {
+        font-size: 18px;
+    }
+
+    @media @tablet-min {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
 .buttons-font() {
     font-weight: 500;
     font-size: 16px;
@@ -73,14 +86,33 @@
     letter-spacing: -1px;
 }
 
-.p1() {
+.statistics-number() {
+    @media @mobile {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    @media @tablet-min {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 56px;
+    }
+}
+
+.small-description {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.p() {
     font-family: @paragraph;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
 }
 
-.p2() {
+.p-big() {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;

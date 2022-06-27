@@ -1,0 +1,98 @@
+@import '../media.less';
+@import '../typography.less';
+
+.orders {
+    background-color: @extra-light-background;
+
+    @media @tablet-max {
+        padding: 40px 0;
+    }
+
+    @media @desktop {
+        padding: 112px 0;
+    }
+
+    &__image {
+        display: block;
+
+        @media @tablet-max {
+            height: 400px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    }
+
+    &__text-container {
+        @media @desktop {
+            margin-top: 48px;
+        }
+    }
+
+    &__heading {
+        .h2();
+
+        @media @tablet-max {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        @media @desktop {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__paragraph {
+        .p();
+
+        @media @tablet-max {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        @media @desktop {
+            margin-bottom: 68px;
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media @mobile {
+            justify-content: space-between;
+        }
+
+        @media @tablet-max {
+            max-width: 432px;
+            margin: 0 auto;
+        }
+
+        &-item {
+            display: flex;
+
+            &_powering {
+                @media @mobile {
+                    margin-right: 8px;
+                }
+
+                @media @tablet-min {
+                    margin-right: 36px;
+                }
+            }
+        }
+
+        &-number {
+            .statistics-number();
+            max-width: 112px;
+
+            @media @tablet-min {
+                margin-right: 16px;
+            }
+        }
+
+        &-text {
+            .small-description();
+            width: 84px;
+        }
+    }
+}
