@@ -883,7 +883,7 @@ a {
     margin-left: 100%;
   }
 }
-.author-position {
+.small-description {
   font-size: 14px;
   line-height: 24px;
 }
@@ -1579,6 +1579,12 @@ img {
     font-weight: 700;
   }
 }
+.features__description {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
 .video {
   background-color: #f8f8fa;
 }
@@ -1659,6 +1665,11 @@ img {
     margin-bottom: 44px;
   }
 }
+.video__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
 @media screen and (max-width: 767px) {
   .video__paragraph {
     margin-bottom: 12px;
@@ -1721,6 +1732,12 @@ img {
     margin-bottom: 24px;
   }
 }
+.selling__paragraph {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
 @media screen and (max-width: 1023px) {
   .selling__paragraph {
     margin-bottom: 30px;
@@ -1780,7 +1797,7 @@ img {
 }
 @media screen and (min-width: 1023px) {
   .orders__text-container {
-    margin-top: 46px;
+    margin-top: 48px;
   }
 }
 .orders__heading {
@@ -1810,6 +1827,12 @@ img {
     margin-bottom: 24px;
   }
 }
+.orders__paragraph {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
 @media screen and (max-width: 1023px) {
   .orders__paragraph {
     margin-bottom: 32px;
@@ -1818,7 +1841,7 @@ img {
 }
 @media screen and (min-width: 1023px) {
   .orders__paragraph {
-    margin-bottom: 67px;
+    margin-bottom: 68px;
   }
 }
 .orders__statistics {
@@ -1872,6 +1895,8 @@ img {
   }
 }
 .orders__statistics-text {
+  font-size: 14px;
+  line-height: 24px;
   width: 84px;
 }
 .reviews {
@@ -1882,28 +1907,28 @@ img {
 }
 @media screen and (max-width: 767px) {
   .reviews {
-    background-image: url("../img/reviews/shapes-mobile.png");
+    background-image: url('../img/reviews/shapes-mobile.png');
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .reviews {
-    background-image: url("../img/reviews/shapes-mobile-2x.png");
+    background-image: url('../img/reviews/shapes-mobile-2x.png');
   }
 }
 @media screen and (max-width: 1023px) {
   .reviews {
-    padding: 40px 0 10px;
+    padding: 40px 0 12px;
   }
 }
 @media screen and (min-width: 1023px) {
   .reviews {
     padding: 84px 0 104px;
-    background-image: url("../img/reviews/shapes-desktop-tablet.png");
+    background-image: url('../img/reviews/shapes-desktop-tablet.png');
   }
 }
 @media screen and (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1023px) and (min-resolution: 2dppx) {
   .reviews {
-    background-image: url("../img/reviews/shapes-desktop-tablet-2x.png");
+    background-image: url('../img/reviews/shapes-desktop-tablet-2x.png');
   }
 }
 .reviews__heading {
@@ -1926,7 +1951,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .reviews__heading {
-    width: 275px;
+    width: 276px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1936,7 +1961,7 @@ img {
 }
 @media screen and (max-width: 1023px) {
   .reviews__heading {
-    margin: 0 auto 30px;
+    margin: 0 auto 32px;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -1951,7 +1976,7 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .reviews__element {
-    margin: 0 50px 30px;
+    margin: 0 52px 32px;
   }
 }
 .reviews__element-heading {
@@ -1971,12 +1996,18 @@ img {
   }
 }
 .reviews__element-paragraph {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
   margin-top: 16px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .reviews__element-paragraph {
+    font-weight: 400;
     font-size: 18px;
+    line-height: 32px;
     line-height: 28px;
   }
 }
@@ -1988,7 +2019,7 @@ img {
   background-color: #f8f8fa;
 }
 .reviews__text-container::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: -16px;
@@ -2000,7 +2031,7 @@ img {
 }
 .reviews__author {
   display: flex;
-  width: 246px;
+  width: 248px;
   margin: 32px auto 0;
 }
 .reviews__author-photo {

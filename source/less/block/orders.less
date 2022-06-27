@@ -24,7 +24,7 @@
 
     &__text-container {
         @media @desktop {
-            margin-top: 46px;
+            margin-top: 48px;
         }
     }
 
@@ -42,13 +42,15 @@
     }
 
     &__paragraph {
+        .p();
+
         @media @tablet-max {
             margin-bottom: 32px;
             text-align: center;
         }
 
         @media @desktop {
-            margin-bottom: 67px;
+            margin-bottom: 68px;
         }
     }
 
@@ -89,6 +91,7 @@
         }
 
         &-text {
+            .small-description();
             width: 84px;
         }
     }
