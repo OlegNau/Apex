@@ -1,0 +1,61 @@
+@import '../variables.less';
+@import '../typography.less';
+
+.selling {
+    padding: 40px 0;
+
+    &__container {
+        display: flex;
+
+        @media @tablet-max {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__text-container {
+        @media @desktop {
+            margin-top: 116px;
+        }
+    }
+
+    &__heading {
+        .h2();
+
+        @media @tablet-max {
+            margin-bottom: 16px;
+        }
+
+        @media @desktop {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__paragraph {
+        @media @tablet-max {
+            margin-bottom: 30px;
+        }
+
+        @media @desktop {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__image {
+        display: block;
+
+        @media @tablet-max {
+            height: 400px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+
+        @media @desktop {
+            width: 704px;
+            height: 588px;
+        }
+
+        @media @desktop-interval {
+            object-fit: contain;
+        }
+    }
+}
