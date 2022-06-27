@@ -1,0 +1,127 @@
+@import '../media.less';
+@import '../typography.less';
+
+.reviews {
+    background-color: @button-color;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 30%;
+
+    @media @mobile {
+        background-image: url('../img/reviews/shapes-mobile.png');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/reviews/shapes-mobile-2x.png');
+        }
+    }
+
+    @media @tablet-max {
+        padding: 40px 0 10px;
+    }
+
+    @media @desktop {
+        padding: 84px 0 104px;
+        background-image: url('../img/reviews/shapes-desktop-tablet.png');
+
+        @media (min-resolution: 2dppx) {
+            background-image: url('../img/reviews/shapes-desktop-tablet-2x.png');
+        }
+    }
+
+    &__heading {
+        .h2();
+        text-align: center;
+        color: @base-color;
+
+        @media @mobile {
+            width: 275px;
+        }
+
+        @media @tablet-min {
+            width: 448px;
+        }
+
+        @media @tablet-max {
+            margin: 0 auto 30px;
+        }
+
+        @media @desktop {
+            margin: 0 auto 72px;
+        }
+    }
+
+    &__element {
+        @media @mobile {
+            margin: 0 0 24px;
+        }
+
+        @media @tablet-interval {
+            margin: 0 50px 30px;
+        }
+
+        &-heading {
+            .h5();
+            color: @accent-color;
+            text-align: center;
+        }
+
+        &-paragraph {
+            margin-top: 16px;
+            text-align: center;
+
+            @media @tablet-min {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__text-container {
+        position: relative;
+        min-height: 200px;
+        padding: 32px 48px 28px;
+        border-radius: 12px;
+        background-color: @extra-light-background;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -16px;
+            width: 0;
+            height: 0;
+            border-top: 16px solid @extra-light-background;
+            border-left: 16px solid transparent;
+            border-right: 16px solid transparent;
+        }
+    }
+
+    &__author {
+        display: flex;
+        width: 246px;
+        margin: 32px auto 0;
+
+        &-photo {
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin-right: 16px;
+            border-radius: 50%;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-name {
+            .p2();
+            font-weight: 500;
+        }
+
+        &-position {
+            .author-position();
+        }
+    }
+}
