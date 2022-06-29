@@ -9,11 +9,13 @@
         margin: 0 auto;
 
         @media @desktop {
+            justify-content: flex-start;
             padding-top: 4px;
+            padding-left: 112px;
         }
     }
 
-    &__item {
+    &__item + &__item {
         @media @mobile {
             margin-right: 24px;
         }
@@ -21,16 +23,9 @@
         @media @tablet-min {
             margin-left: 64px;
         }
-
-        &:nth-child(4n + 4) {
-            @media @mobile {
-                margin-right: 0;
-            }
-        }
     }
 
     &__link {
         .footer-nav();
-        cursor: pointer;
     }
 }

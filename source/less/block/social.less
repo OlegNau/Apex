@@ -15,17 +15,13 @@
         padding-bottom: 28px;
     }
 
-    &__item {
+    &__item + &__item {
         @media @tablet-max {
-            margin-right: 36px;
+            margin-left: 36px;
         }
 
         @media @desktop {
             margin-left: 36px;
-        }
-
-        &:nth-child(4n + 4) {
-            margin-right: 0;
         }
     }
 

@@ -1166,7 +1166,6 @@ img {
   line-height: 26px;
   color: #1b1c20;
   transition: background-color 0.4s linear;
-  cursor: pointer;
 }
 .nav__link:hover {
   color: #fd6003;
@@ -2098,14 +2097,9 @@ img {
     line-height: 56px;
   }
 }
-@media screen and (max-width: 767px) {
-  .motivation__heading {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
   .motivation__heading {
-    width: 740px;
+    max-width: 740px;
     margin: 0 auto 36px;
   }
 }
@@ -2204,29 +2198,25 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .footer-nav__list {
+    justify-content: flex-start;
     padding-top: 4px;
+    padding-left: 112px;
   }
 }
 @media screen and (max-width: 767px) {
-  .footer-nav__item {
+  .footer-nav__item + .footer-nav__item {
     margin-right: 24px;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer-nav__item {
+  .footer-nav__item + .footer-nav__item {
     margin-left: 64px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer-nav__item:nth-child(4n + 4) {
-    margin-right: 0;
   }
 }
 .footer-nav__link {
   font-weight: 500;
   font-size: 17px;
   line-height: 30px;
-  cursor: pointer;
 }
 .social {
   display: flex;
@@ -2246,17 +2236,14 @@ img {
   }
 }
 @media screen and (max-width: 1023px) {
-  .social__item {
-    margin-right: 36px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .social__item {
+  .social__item + .social__item {
     margin-left: 36px;
   }
 }
-.social__item:nth-child(4n + 4) {
-  margin-right: 0;
+@media screen and (min-width: 1024px) {
+  .social__item + .social__item {
+    margin-left: 36px;
+  }
 }
 .social__link {
   cursor: pointer;
