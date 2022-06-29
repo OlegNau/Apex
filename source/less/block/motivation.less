@@ -1,0 +1,31 @@
+@import '../media.less';
+@import '../typography.less';
+
+.motivation {
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media @mobile {
+        padding: 40px 0;
+    }
+
+    @media @tablet-min {
+        padding: 104px 0 36px;
+    }
+
+    &__heading {
+        .h2();
+        text-align: center;
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        @media @tablet-min {
+            width: 740px;
+            margin: 0 auto 36px;
+        }
+    }
+}

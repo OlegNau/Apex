@@ -1,0 +1,35 @@
+@import '../media.less';
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @tablet-max {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    @media @desktop {
+        justify-content: flex-end;
+        padding-top: 8px;
+        padding-bottom: 28px;
+    }
+
+    &__item {
+        @media @tablet-max {
+            margin-right: 36px;
+        }
+
+        @media @desktop {
+            margin-left: 36px;
+        }
+
+        &:nth-child(4n + 4) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+    }
+}

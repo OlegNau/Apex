@@ -1,0 +1,36 @@
+@import '../media.less';
+
+.footer-nav {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 28px;
+        margin: 0 auto;
+
+        @media @desktop {
+            padding-top: 4px;
+        }
+    }
+
+    &__item {
+        @media @mobile {
+            margin-right: 24px;
+        }
+
+        @media @tablet-min {
+            margin-left: 64px;
+        }
+
+        &:nth-child(4n + 4) {
+            @media @mobile {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__link {
+        .footer-nav();
+        cursor: pointer;
+    }
+}
