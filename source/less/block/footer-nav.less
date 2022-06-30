@@ -4,9 +4,12 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         padding-bottom: 28px;
         margin: 0 auto;
+
+        @media @tablet-max {
+            justify-content: center;
+        }
 
         @media @desktop {
             justify-content: flex-start;

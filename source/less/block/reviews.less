@@ -1,5 +1,6 @@
 @import '../media.less';
 @import '../typography.less';
+@import "../variables.less";
 
 .reviews {
     background-color: @button-color;
@@ -109,12 +110,14 @@
             height: 64px;
             margin-right: 16px;
             border-radius: 50%;
+            background-color: @extra-light-background;
         }
 
         &-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            color: @base-color;
         }
 
         &-name {
