@@ -23,7 +23,6 @@
     }
 
     &__logo {
-        flex-shrink: 0;
         display: block;
         width: 96px;
         height: 36px;
@@ -34,17 +33,17 @@
         }
 
         @media @desktop {
+            flex-shrink: 0;
         }
     }
 
     &__nav {
-        flex-grow: 1;
-
         @media @tablet-max {
             margin-bottom: 32px;
         }
 
         @media @desktop {
+            flex-grow: 1;
             margin: 0 40px;
         }
 
@@ -72,8 +71,8 @@
     &__legal {
         .p();
         display: flex;
-        color: @footer-legal;
         padding-top: 32px;
+        color: @footer-legal;
 
         @media @tablet-max {
             flex-direction: column;
