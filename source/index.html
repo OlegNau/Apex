@@ -14,59 +14,49 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col_lg-2 col_md-3 col_sm-5 col_xs-5">
-                        <img
-                            src="build/img/svg/logo.svg"
-                            class="header__logo"
-                            height="96"
-                            width="36"
-                            alt="logo Apex"
-                        />
-                    </div>
-                    <div class="col_lg-9 col-offset_lg-1 col_md-9 col_xs-7">
-                        <div class="header__nav-and-login">
-                            <nav class="nav">
-                                <ul class="nav__list">
-                                    <li class="nav__element">
-                                        <a href="#" class="nav__link">Demos</a>
-                                    </li>
-                                    <li class="nav__element">
-                                        <a href="#" class="nav__link">About</a>
-                                    </li>
-                                    <li class="nav__element">
-                                        <a href="#" class="nav__link">Blog</a>
-                                    </li>
-                                    <li class="nav__element">
-                                        <a href="#" class="nav__link">Pages</a>
-                                    </li>
-                                    <li class="nav__element">
-                                        <a href="#" class="nav__link"
-                                            >Contact</a
-                                        >
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="header__login">
-                                <button class="header__login-button">
-                                    Login
-                                </button>
-                                <button class="button button_header">
-                                    Get Started Free
-                                </button>
-                            </div>
-                        </div>
-                        <button class="header__toggle header__toggle_active">
-                            <!-- Меню активно при открытии страницы и закрывается после загрузки скриптов автоматически,
-                 реализовал для доступности страницы в случае если не заработают/не загрузятся скрипты-->
-                            <span class="header__toggle-icon">
-                                <span class="visually-hidden">Меню</span>
-                                <!-- спан с классом visually-hidden сделал для чтения страницы черз скринридер -->
-                            </span>
+            <div class="container header__container">
+                <img
+                    src="build/img/svg/logo.svg"
+                    class="header__logo"
+                    height="96"
+                    width="36"
+                    alt="logo Apex"
+                />
+                <div class="header__nav-and-login">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__element">
+                                <a href="#" class="nav__link">Demos</a>
+                            </li>
+                            <li class="nav__element">
+                                <a href="#" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__element">
+                                <a href="#" class="nav__link">Blog</a>
+                            </li>
+                            <li class="nav__element">
+                                <a href="#" class="nav__link">Pages</a>
+                            </li>
+                            <li class="nav__element">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__login">
+                        <button class="header__login-button">Login</button>
+                        <button class="button button_header">
+                            Get Started Free
                         </button>
                     </div>
                 </div>
+                <button class="header__toggle header__toggle_active">
+                    <!-- Меню активно при открытии страницы и закрывается после загрузки скриптов автоматически,
+         реализовал для доступности страницы в случае если не заработают/не загрузятся скрипты-->
+                    <span class="header__toggle-icon">
+                        <span class="visually-hidden">Меню</span>
+                        <!-- спан с классом visually-hidden сделал для чтения страницы черз скринридер -->
+                    </span>
+                </button>
             </div>
         </header>
         <main>
@@ -364,17 +354,17 @@
                                     <div
                                         class="orders__statistics-item orders__statistics-item_powering"
                                     >
-                                        <h3 class="orders__statistics-number"
-                                            >4.3K+</h3
-                                        >
+                                        <h3 class="orders__statistics-number">
+                                            4.3K+
+                                        </h3>
                                         <p class="orders__statistics-text">
                                             Website’s Powering
                                         </p>
                                     </div>
                                     <div class="orders__statistics-item">
-                                        <h3 class="orders__statistics-number"
-                                            >7M+</h3
-                                        >
+                                        <h3 class="orders__statistics-number">
+                                            7M+
+                                        </h3>
                                         <p class="orders__statistics-text">
                                             Chats in Last 2022
                                         </p>
@@ -501,90 +491,96 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="row footer__top-section">
-                    <div class="col_lg-2 col_md-2 col_sm-12 col_xs-12">
-                        <img
-                            src="build/img/svg/logo.svg"
-                            class="footer__logo"
-                            height="96"
-                            width="36"
-                            alt="logo Apex"
-                        />
-                    </div>
-                    <nav
-                        class="col_lg-6 col-offset_lg-1 col_md-7 col_sm-12 col_xs-12"
-                    >
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">About</a>
+                <div class="footer__top-section">
+                    <img
+                        src="build/img/svg/logo.svg"
+                        class="footer__logo"
+                        height="96"
+                        width="36"
+                        alt="logo Apex"
+                    />
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">About</a>
                             </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link"
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link"
                                     >Features</a
                                 >
                             </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">Works</a>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Works</a>
                             </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">Support</a>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Support</a>
                             </li>
                         </ul>
                     </nav>
-                    <div
-                        class="col_lg-3 col_md-3 col_sm-12 col_xs-12"
-                    >
-                        <ul class="social">
-                            <li class="social__item">
-                                <a href="" class="social__link" target="_blank" rel="nofollow">
-                                    <img
-                                        src="build/img/svg/social/twitter.svg"
-                                        alt="Twitter"
-                                    />
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="#" class="social__link" target="_blank" rel="nofollow">
-                                    <img
-                                        src="build/img/svg/social/facebook.svg"
-                                        alt="Facebook"
-                                    />
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="" class="social__link" target="_blank" rel="nofollow">
-                                    <img
-                                        src="build/img/svg/social/instagram.svg"
-                                        alt="Instagram"
-                                    />
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="" class="social__link" target="_blank" rel="nofollow">
-                                    <img
-                                        src="build/img/svg/social/github.svg"
-                                        alt="GitHub"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row footer__legal">
-                    <div class="col_lg-3 col_md-4 col_sm-12 col_xs-12">
-                        <span class="footer__legal-copyright"
-                            >© Copyright 2022, All Rights Reserved</span
-                        >
-                    </div>
-                    <div
-                        class="col_lg-4 col-offset_lg-5 col_md-4 col-offset_md-4 col_sm-12 col_xs-12"
-                    >
-                        <div class="footer__legal-container">
-                            <a href="#" class="footer__legal-privacy"
-                                >Privacy Policy</a
+                    <ul class="social">
+                        <li class="social__item">
+                            <a
+                                href=""
+                                class="social__link"
+                                target="_blank"
+                                rel="nofollow"
                             >
-                            <a href="#">Terms & Conditions</a>
-                        </div>
+                                <img
+                                    src="build/img/svg/social/twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="build/img/svg/social/facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href=""
+                                class="social__link"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="build/img/svg/social/instagram.svg"
+                                    alt="Instagram"
+                                />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href=""
+                                class="social__link"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="build/img/svg/social/github.svg"
+                                    alt="GitHub"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__legal">
+                    <span class="footer__legal-copyright"
+                        >© Copyright 2022, All Rights Reserved</span
+                    >
+                    <div class="footer__legal-container">
+                        <a href="#" class="footer__legal-privacy"
+                            >Privacy Policy</a
+                        >
+                        <a href="#">Terms & Conditions</a>
                     </div>
                 </div>
             </div>

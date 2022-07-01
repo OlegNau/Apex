@@ -2,17 +2,19 @@
 
 .social {
     display: flex;
-    flex-wrap: wrap;
+    align-self: center;
+    flex-shrink: 0;
 
     @media @tablet-max {
         justify-content: center;
-        padding-bottom: 40px;
     }
 
     @media @desktop {
         justify-content: flex-end;
-        padding-top: 8px;
-        padding-bottom: 28px;
+    }
+    &__item {
+        display: flex;
+        align-self: center;
     }
 
     &__item + &__item {
@@ -26,6 +28,9 @@
     }
 
     &__link {
+        font-size: 0;
+        line-height: 0;
+
         cursor: pointer;
     }
 }

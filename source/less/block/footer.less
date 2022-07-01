@@ -7,35 +7,23 @@
 
     &__top-section {
         position: relative;
-        padding-bottom: 28px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid @footer-border;
 
-        &::after {
-            content: '';
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 1px;
-            background-color: @footer-border;
+        @media @tablet-max {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
 
-            @media @mobile {
-                margin: 0 16px;
-            }
-
-            @media @tablet-interval {
-                margin: 0 8px;
-            }
-
-            @media @desktop-interval {
-                margin: 0 16px;
-            }
-
-            @media @desktop-min {
-                margin: 0 24px;
-            }
+        @media @desktop {
+            justify-content: space-between;
+            padding-bottom: 28px;
         }
     }
 
     &__logo {
+        flex-shrink: 0;
         display: block;
         width: 96px;
         height: 36px;
@@ -46,13 +34,54 @@
         }
 
         @media @desktop {
-            padding-bottom: 28px;
+        }
+    }
+
+    &__nav {
+        flex-grow: 1;
+
+        @media @tablet-max {
+            margin-bottom: 32px;
+        }
+
+        @media @desktop {
+            margin: 0 40px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        &-item + &-item {
+            @media @mobile {
+                margin-left: 24px;
+            }
+
+            @media @tablet-min {
+                margin-left: 64px;
+            }
+        }
+
+        &-ink {
+            .footer-nav();
         }
     }
 
     &__legal {
         .p();
+        display: flex;
         color: @footer-legal;
+        padding-top: 32px;
+
+        @media @tablet-max {
+            flex-direction: column;
+        }
+
+        @media @desktop {
+            justify-content: space-between;
+        }
 
         &-copyright {
             @media @tablet-max {
