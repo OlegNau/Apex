@@ -28,13 +28,15 @@
         }
     }
 
-    &__element + &__element {
-        @media @desktop-interval {
-            margin-left: 30px;
-        }
+    &__element {
+        & + & {
+            @media @desktop-interval {
+                margin-left: 30px;
+            }
 
-        @media @desktop-min {
-            margin-left: 44px;
+            @media @desktop-min {
+                margin-left: 44px;
+            }
         }
     }
 

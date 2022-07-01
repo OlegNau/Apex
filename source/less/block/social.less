@@ -18,13 +18,15 @@
         align-self: center;
     }
 
-    &__item + &__item {
-        @media @tablet-max {
-            margin-left: 36px;
-        }
+    &__item {
+        & + & {
+            @media @tablet-max {
+                margin-left: 36px;
+            }
 
-        @media @desktop {
-            margin-left: 36px;
+            @media @desktop {
+                margin-left: 36px;
+            }
         }
     }
 

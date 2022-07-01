@@ -53,13 +53,15 @@
             margin: 0 auto;
         }
 
-        &-item + &-item {
-            @media @mobile {
-                margin-left: 24px;
-            }
+        &-item {
+            & + & {
+                @media @mobile {
+                    margin-left: 24px;
+                }
 
-            @media @tablet-min {
-                margin-left: 64px;
+                @media @tablet-min {
+                    margin-left: 64px;
+                }
             }
         }
 
