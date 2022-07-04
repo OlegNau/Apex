@@ -3,20 +3,17 @@
 @import '../typography.less';
 
 .nav {
-    margin-top: 16px;
+    @media @desktop {
+        align-self: center;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 0 40px;
+    }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-
-        @media @mobile {
-            max-width: none;
-        }
-
-        @media @tablet-min {
-            max-width: 500px;
-        }
+        justify-content: center;
 
         @media @tablet-max {
             flex-direction: column;
@@ -29,13 +26,17 @@
             margin-bottom: 12px;
             text-align: center;
         }
+    }
 
-        @media @desktop-interval {
-            margin-right: 30px;
-        }
+    &__element {
+        & + & {
+            @media @desktop-interval {
+                margin-left: 30px;
+            }
 
-        @media @desktop-min {
-            margin-right: 44px;
+            @media @desktop-min {
+                margin-left: 44px;
+            }
         }
     }
 

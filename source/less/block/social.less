@@ -2,30 +2,37 @@
 
 .social {
     display: flex;
-    flex-wrap: wrap;
+    align-self: center;
+    flex-shrink: 0;
 
     @media @tablet-max {
         justify-content: center;
-        padding-bottom: 40px;
     }
 
     @media @desktop {
         justify-content: flex-end;
-        padding-top: 8px;
-        padding-bottom: 28px;
     }
 
-    &__item + &__item {
-        @media @tablet-max {
-            margin-left: 36px;
-        }
+    &__item {
+        display: flex;
+        align-self: center;
+    }
 
-        @media @desktop {
-            margin-left: 36px;
+    &__item {
+        & + & {
+            @media @tablet-max {
+                margin-left: 36px;
+            }
+
+            @media @desktop {
+                margin-left: 36px;
+            }
         }
     }
 
     &__link {
+        font-size: 0;
+        line-height: 0;
         cursor: pointer;
     }
 }
